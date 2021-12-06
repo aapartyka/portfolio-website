@@ -1,0 +1,417 @@
+
+:root{
+  /*Colors */
+  --white-color: #F5FFFA;
+  --light-green-color: #45a049;
+  --green-border-color : #04AA6D;
+  --green-table-color: #04aa6d80;
+  --green-color: #2F4F4F;
+  --green-color-rgb: #002e1dde;
+  --purple-color: #530153af;
+  --grey-color: #333;
+/*Font Weight*/
+  --light-font: 250;
+  --mid-font: 450;
+  --heavy-font: 900;
+  /*Font-Size*/
+  --font-1: 38px;
+  --font-2: 30px;
+  --font-3: 25px;
+  --font-4: 20px;
+  --font-5: 18px;
+  --font-6: 16px;
+  --font-7: 14px;
+  --font-8: 12px;
+  --font-9: 10px;
+}
+
+body {
+  font-family: 'Space Mono', monospace;
+  font-weight: var(--mid-font);
+  font-size: var(--font-7);
+  line-height: 1.6;
+  text-align: center;
+  color: var(--white-color);
+  background-color: var(--green-color-rgb);
+}
+
+h1 {
+  font-weight: var(--heavy-font);
+  font-weight: bold;
+  font-size: var(--font-1);
+   line-height: 1.8; 
+}
+
+a {
+   line-height: 1.7; 
+  color: var(--white-color);
+}
+
+
+a:visited {
+  color: var(--purple-color);
+}
+
+a:hover {
+  color: var(--light-green-color)
+}
+
+a:active {
+  color: var(--light-green-color);
+}
+
+img{
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+.profile {
+  max-width: 700px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.profile__portrait {
+  float: left;
+  width: 250px;
+  margin-right: 40px;
+  border-radius: 50%;
+}
+
+p {
+  font-size: var(--font-5);
+  line-height: 1.4;
+}
+
+ol {
+  font-size: var(font-6);
+  float: left;
+  margin: 20px;
+  padding: 20px;
+}
+
+ul{
+
+  font-weight: var(--light-font);
+  font-size: var(font-6);
+  line-height: 1.6;
+  color: var(--white-color); 
+  float: center;
+  margin: 20px;
+  padding: 20px;
+  list-style-type:lower-greek;
+  list-style-position: inside;
+}
+
+.standard-label {
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-top: 10px;
+  margin-bottom: 1px;
+  padding-bottom: 1px;
+  padding-top: 10px;
+  font-family: inherit;
+  font-weight: inherit;
+  float: left;
+  font-size: var(font-6);
+}
+
+.button, button {
+  /* overwrites browser defaults and resets the border */
+  border: none;
+  display: inline-block;
+  /* takes the font from the outer container */
+  font-family: inherit;
+  /* styles the button */
+  background-color: var(--green-border-color);
+  color: var(--white-color);
+  text-decoration: none;
+  padding: 10px;
+  border-radius: 4px;
+  /* width of the border, type, color */
+  border-bottom: 2px solid var(--green-border-color);
+  transition: 0.7s opacity;
+}
+
+button:hover,
+button:focus,
+.button:hover,
+.button:focus {
+  color: var(--white-color);
+  /* lets the mouse appear as a hand when hovering over the button */
+  cursor: pointer;
+  /* reduces the opacity of the button to 80% */
+  opacity: 0.8;
+}
+
+input[type=email],[type=tel]{
+
+  width: 95%;
+  margin-left: 20px;
+  margin-right: 10px;
+  margin-top: 5px;
+  margin-bottom: 30px;
+  padding-bottom: 20px;
+  padding-top: 5px;
+  border: none;
+  border-bottom: 2px solid var(--green-border-color);
+  background-color: inherit;
+  color: var(--white-color);
+}
+
+input[type=text], textarea {
+  width: 95%; /* Full width */
+  margin-left: 15px;
+  margin-top: 15px;
+  margin-bottom: 10px;
+  padding-bottom: 50px;
+  border: 3px var(--green-border-color); 
+  background-color: inherit;
+  color: var(--white-color);
+  border-radius: 4px; /* Rounded borders */
+  resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+/* Style the submit button with a specific background color etc */
+input[type=submit] {
+  background-color: var(--green-border-color);
+  color: var(--white-color);
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  height: 30;
+  width: 200;
+}
+
+/*Different design cause the task was build one with rgba while hovering*/
+input[type=submit]:hover {
+  background-color: var(--green-color-rgb);
+  color: var(--white-color);
+}
+
+input[type=submit]:active {
+  background-color: var(--light-green-color);
+  color: var(--white-color);
+}
+
+/* For the top navigation */
+.topnavigation {
+  overflow: hidden;
+  background-color: var(--grey-color);
+}
+
+.topnavigation a {
+  float: left;
+  color: var(--white-color);
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: var(--font-5);
+}
+
+.topnavigation a:hover{
+  background-color:  var(--white-color);
+  color: var(--grey-color);
+}
+
+.topnavigation a.active {
+  background-color: var(--light-green-color);
+  color: var(--white-color);
+}
+
+/* For the table */
+.tableskills, .tableeducation{
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
+
+.row {
+  margin-left:-5px;
+  margin-right:-5px;
+}
+
+.column {
+  float: left;
+  width: 100%;
+  padding: 5px;
+}
+
+/* clear floats */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  width: 100%;
+  border: 1px solid var(--white-color);
+  caption-side: top;
+}
+
+caption{
+  text-align: left;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  font-size: var(--font-5);
+  color: var(--white-color);
+}
+
+th, td {
+  text-align: left;
+  padding: 16px;
+  color: var(--white-color);
+  line-height: 1.6;
+  font-size: var(--font-5);
+}
+
+tr:nth-child(even) {
+  background-color: var(--green-table-color);
+}
+
+.page-header {
+  display: flex;
+  width: 100%
+  padding 20px;
+}
+
+.page-header__item {
+  flex: 0 1 200px;
+}
+
+.page-header__item:last-child {
+  flex-grow: 1;
+  text-align: right;
+}
+
+.navigation-list {
+  list-style-type: none;
+}
+
+.navigation-list li {
+  display: inline-block;
+  margin-left: 15px;
+}
+
+/* start grid fallback */
+.grid__item {
+ display: inline-block;
+ width: 33%;
+}
+/* end grid fallback */
+
+@supports (display: grid) {
+ .grid {
+   display: grid;
+   /* grid-template-columns: 300px 300px 300px; fractions are better than pixels - they are responsive */
+   grid-template-columns: 1fr 1fr 1fr;
+   grid-gap: 20px;
+   margin: 0;
+ }
+ .grid__item {
+   background-color: var(--grey-color);
+   width: auto;
+   min-height: auto;
+   margin: 0;
+ }
+ .grid__item:last-child {
+   grid-column: 3 / 3;
+   grid-row: 1 / 3;
+ }
+}
+/*There will be no variables for the following colors, there only used once*/
+@keyframes color-change {
+  0% {
+    fill: #edc655; 
+  }
+  50% {
+    fill: #fcffad;
+  }
+  100% {
+    fill: #f76414;
+  }
+}
+
+.sun {
+  animation: 6s color-change infinite alternate linear;
+}
+
+@keyframes cloud-move {
+  from {
+    transform: translate(0, 50px);
+  }
+  to {
+    transform: translate(200px, 50px);
+  }
+}
+
+@keyframes cloud-move-reverse {
+  from {
+    transform: translate(446px, 48px);
+  }
+  to {
+    transform: translate(100px, 48px);
+  }
+}
+
+.cloud-back {
+  animation: 34s cloud-move-reverse infinite alternate linear;
+}
+
+.cloud-front {
+  animation: 20s cloud-move infinite alternate linear;
+}
+
+/*For the footer*/
+.page-footer {
+  clear:both;
+  display: flex;
+  flex-direction:column;
+  text-align: center;
+  /* Fixed at bottom*/
+  /*position: fixed;
+  bottom: 0;
+  lef: 0;
+  width: 100%;
+  height: 50px;
+  padding: 10px;
+  margin: 10;
+  display: flex;
+  align-items: center;
+  justify-content: center;*/
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+@media all and (max-width: 500px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+}
+@media all and (min-width: 500px) and (max-width: 750px){
+  .grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media all and (max-width: 750px) {
+  .grid {
+    grid-gap: 10px;
+  }
+  .grid__item:last-child {
+    grid-column: auto / auto;
+    grid-row: auto / auto;
+  }
+}

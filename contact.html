@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name ="description" content="Portfolio Contact Page">
+  <!--replace later with my own icon-->
+  <link rel = "shortcut icon" href ="https://www.wikipedia.org/static/favicon/wikipedia.ico">
+  <title>Arno's Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!--reset/normalize the browsers defaults-->
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+  <!--replace later with a font I like-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="css/style.production.css">
+</head>
+<body>
+  <header>
+    <nav role="navigation" class="topnavigation">
+      <!--Have to figure out how I can position my logo nicely in the navigation bar.-->
+      <!--<img src="img/APlogo.png" alt="" height="30">-->
+      <a href="index.html" target="_self">Home</a>
+      <a href="about.html" target="_self">About</a>
+      <a class="active" href="contact.html" target="_blank">Contact</a>
+      <a href="work.html" target="_self">Work</a>
+    </nav>
+  </header>
+  <main>
+    <h1>Contact</h1>
+
+    <button onclick="window.location.href='mailto:arno.partyka@gmx.de?body=Hi%20Arno%2C';">Contact me</button>
+    <!--email section for contact. maybe replace later with a contact form without my email. So I don't have to deal with bots?-->
+    <p>
+      <!--I will delete Later my number and my skype-->
+      Tel: <a href="tel:+491622690975">+491622690975</a><br>
+      Email: <a href="mailto:arno.partyka@gmx.de">arno.partyka@gmx.de</a><br>
+      Skype: <a href="skype:live:.cid.3d60171c1b1c9de2">live:.cid.3d60171c1b1c9de2</a><br>
+    </p>
+    <!--Section for contact Form with required E-mail, optional Telphone and mandatory mkessage field-->
+    <form action="" method="post" id="contact-form">
+      <label class="standard-label" for="contact-email">E-mail: </label>
+      <input type="email" id="contact-email" placeholder="your.example@email.com" required>
+      <label class="standard-label" for="phone-number">Telephone(optional): </label>
+      <!--maybe remove the regEx later-->
+      <input type="tel" id="phone-number" placeholder="Tel: 000-000-0000" pattern="\d{3}[\-]d{3}[\-]\d{4}">
+      <label class="standard-label" for="contact-message">Message: </label>
+      <textarea maxlength="600" id="contact-message" placeholder="Here could be your message." required></textarea>
+      <input type="submit" value="send-message"></>
+    </form>
+  </main>
+  <footer class="page-footer">
+    <p>Find me on</p>
+    <!--target="_blank for opening the link in a new window tap (by default "Self") "-->
+    <a href="https://github.com" target="_blank"><img src="img/githubLogo.svg" alt="GitHub profile"></a>
+    <a href="https://twitter.com" target="_blank"><img src="img/linkedinLogo.svg" alt="Twitter profile"></a>
+    <a href="https://linkedin.com" target="_blank"><img src="img/twitterLogo.svg" alt="Linkedin profile"></a>
+  </footer>
+  <script src="js/tota11y.min.js"></script>
+</body>
+</html>
