@@ -9,33 +9,20 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <!--reset/normalize the browsers defaults-->
   <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
-  <!--replace later with a font I like-->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="css/style.production.css">
 </head>
 <body>
-  <header class="page-header">
-    <!--Have to figure out how I can position my logo nicely in the navigation bar.-->
-    <img src="img/APlogov2.png" alt="logo" class="page-header__item">
-    <nav class="main-navigation page-header__item">
-      <ul role="menubar" class="navigation-list">
-        <li role="presentation">
-          <a href="index.html" target="_self" role ="menuitem" class="navigation-list__item">Home</a>
-        </li>
-        <li role="presentation">
-          <a href="about.html" target="_self" role="menuitem" class="navigation-list__item navigation-list__item--active">About</a>
-        </li>
-        <li role="presentation">
-          <a href="contact.html" target="_self" role="menuitem" class="navigation-list__item">Contact</a>
-        </li>
-        <li role="presentation">
-          <a href="work.html" target="_self" role="menuitem" class="navigation-list__item">Work</a>
-        </li>
-        </ul>
-    </nav>
-  </header>
+    <header>
+      <nav class="topnavigation">
+        <a href="index.html" target="_self">Home</a>
+        <a class="active" href="about.html" target="_self">About</a>
+        <a href="contact.html" target="_self">Contact</a>
+        <a href="work.html" target="_self">Work</a>
+      </nav>
+    </header>
   <main>
     <div>
       <h1>About me</h1>

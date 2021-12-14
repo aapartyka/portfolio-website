@@ -52,7 +52,7 @@ img{
 
 .profile {
   max-width: 700px;
-  margin: 0 auto;
+  margin: 100px auto;
   text-align: left;
 }
 
@@ -271,7 +271,7 @@ input[type=submit]:active {
 }
 
 .topnavigation a.active {
-  background-color: #45a049;
+  background-color: #002e1d;
   color: #F5FFFA;
 }
 
